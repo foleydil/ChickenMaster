@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Chicken Master</string>
+
+    <!-- Strings for titles pertaining to each chicken type    -->
+    <string name="title_grilled">Grilled Chicken</string>
+    <string name="title_bleu">Chicken Cordon Bleu</string>
+    <string name="title_tenders">Chicken Tenders</string>
+    <string name="title_wings">Boneless Chicken Wings</string>
+    <string name="title_piccata">Chicken Piccata</string>
+    <string name="title_congrats">Congratulations</string>
+
+    <!-- Strings for question text for each chicken type    -->
+    <string name="question_grilled">Marinate chicken overnight. Grill over direct flame for 5 minutes each side, or until juices run:</string>
+    <string name="question_bleu">Breaded chicken breast, stuffed with _________ and baked.</string>
+    <string name="question_tenders">Popular dipping sauces for chicken tenders include Ketchup, Honey Mustard, or:</string>
+    <string name="question_wings">Boneless wings differ from traditional wings in that they contain no:</string>
+    <string name="question_piccata">To tenderize prior to cooking, place the chicken cutlet between two pieces of plastic wrap and beat with:</string>
+    <string name="question_congrats">You are now the Chicken Master!</string>
+
+    <!-- Strings for answers for each chicken type    -->
+    <string name="answer1_grilled">Pink</string>
+    <string name="answer2_grilled">Clear</string>
+    <string name="answer3_grilled">All over the damn place</string>
+
+    <string name="answer1_bleu">Ham &amp; swiss cheese</string>
+    <string name="answer2_bleu">Hot dogs &amp; pasta</string>
+    <string name="answer3_bleu">Bacon</string>
+
+    <string name="answer1_tenders">Red Wine</string>
+    <string name="answer2_tenders">Barbecue</string>
+    <string name="answer3_tenders">The tears of your enemies</string>
+
+    <string name="answer1_wings">Tree nuts</string>
+    <string name="answer2_wings">Alcohol</string>
+    <string name="answer3_wings">Bones</string>
+
+    <string name="answer1_piccata">A meat tenderizer</string>
+    <string name="answer2_piccata">A beet</string>
+    <string name="answer3_piccata">A vengeance</string>
+    <!-- Strings for button names    -->
+    <string name="next_button">Next</string>
+    <string name="prev_button">Prev</string>
+</resources>
