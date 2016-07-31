@@ -1,0 +1,11 @@
+5 ways to Cook a Chicken Breast:
+1)Marinated & Grilled
+2)Chicken Cordon Bleu
+3)Breaded Chicken Tenders
+4)Boneless Chicken Wings
+5)Fried Chicken
+
+My app "Chicken Master" will teach the user five different ways to cook a chicken breast. The app will give the user a topic
+in the form of a chicken-based dish, provide basics of how to prepare that dish, and then ask the user to answer a question.
+The user won't be allowed to progress onto the next topic until they've answered the previous question correctly. The app
+will utilize buttons to "navigate" across topics, as well as check-boxes to allow the user to answer the quiz questions.
