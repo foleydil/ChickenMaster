@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         RadioButton radio3 = (RadioButton) findViewById(R.id.radio3);
         Button next = (Button) findViewById(R.id.next);
         Button prev = (Button) findViewById(R.id.prev);
+        Button startOver = (Button) findViewById(R.id.startOver);
 
         String title_string = "null";
         String question_string = "null";
@@ -62,8 +63,13 @@ public class MainActivity extends AppCompatActivity {
             answer2_string = getString(R.string.answer2_grilled);
             answer3_string = getString(R.string.answer3_grilled);
 
-            /** Removes "Prev" button if user navigated back from question 2 */
+            /** Removes "Prev" button if user navigated back from question 2
+             *  Removes "Start Over" button if user navigated from Congratulations screen
+             *  Adds radioGroup * "Next" button back in if user navigated back from Congratulations screen*/
             prev.setVisibility(Button.GONE);
+            startOver.setVisibility(Button.GONE);
+            radioGroup.setVisibility(RadioGroup.VISIBLE);
+            next.setVisibility(Button.VISIBLE);
         }
 
         if (questionNum == 2) {
@@ -104,10 +110,11 @@ public class MainActivity extends AppCompatActivity {
             answer2_string = getString(R.string.answer2_piccata);
             answer3_string = getString(R.string.answer3_piccata);
 
-            /** adds Radio Group and "Next" button for case where user navigated back with "Prev" button */
+            /** adds Radio Group and "Next" button & removes "Start Over" button
+             * for case where user navigated back with "Prev" button */
             radioGroup.setVisibility(RadioGroup.VISIBLE);
             next.setVisibility(Button.VISIBLE);
-
+            startOver.setVisibility(Button.GONE);
         }
 
         if (questionNum == 6) {
@@ -115,9 +122,11 @@ public class MainActivity extends AppCompatActivity {
             title_string = getString(R.string.title_congrats);
             question_string = getString(R.string.question_congrats);
 
-            /**Remove Radio Group and "Next" button on congratulations screen */
+            /**Remove Radio Group and "Next" button on congratulations screen
+             * Adds "Start Over" button */
             radioGroup.setVisibility(RadioGroup.GONE);
             next.setVisibility(Button.GONE);
+            startOver.setVisibility(Button.VISIBLE);
         }
 
         title.setText(title_string);
@@ -183,10 +192,9 @@ public class MainActivity extends AppCompatActivity {
         setQuestion();
     }
 
-    /**
-    public void resetRadioButtons(RadioButton radio1, RadioButton radio2, RadioButton radio3){
-        radio1.setChecked(false);
-        radio2.setChecked(false);
-        radio3.setChecked(false);
-    } */
+    public void clickStartOver (View view) {
+        questionNum = 1;
+        setQuestion();
+    }
+
 }

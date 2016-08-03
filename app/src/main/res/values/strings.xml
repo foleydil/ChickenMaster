@@ -40,4 +40,5 @@
     <!-- Strings for button names    -->
     <string name="next_button">Next</string>
     <string name="prev_button">Prev</string>
+    <string name="start_over_button">Start Over</string>
 </resources>
